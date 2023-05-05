@@ -1,0 +1,17 @@
+<div>
+
+   <form [formGroup]="pyro" class="form">
+
+      <div class="input-group">
+         <input type="text" placeholder="Enter the sentence" class="cvar" formControlName="engSent"/>
+      </div>
+
+      <div class="btns">
+         <button (click)="onsubmit(pyro.value)" [disabled]="pyro.invalid" class="register-btn">Get Code</button>
+         <!-- <button (click)="goToLogin()" id="logbt"class="login-btn">Login</button> -->
+      </div>
+      <p>Code: {{ data }}</p>
+      
+   </form>
+
+</div>   

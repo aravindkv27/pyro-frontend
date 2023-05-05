@@ -1,0 +1,24 @@
+<div class="login-wrapper">
+  
+   <form [formGroup]="register" class="form">
+     <h2>REGISTER</h2>
+     <div>
+        <label for="" class="login__label">Email</label>
+        <input type="email" placeholder="" formControlName="email" required class="login__input">
+   </div>
+   <div>
+     <label for="" class="login__label">Password</label>
+     <input type="email" placeholder=""  formControlName="pass" required class="login__input">
+</div>
+<div>
+  <label for="" class="login__label">confirm password</label>
+  <input type="email" placeholder=""  formControlName="repass" required class="login__input">
+</div>
+       <div class="btns">
+             <button (click)="onsubmit(register.value)" [disabled]="register.invalid" class="register-btn">Register</button>
+             <button (click)="goToLogin()" id="logbt"class="login-btn">Login</button>
+        </div>
+   </form>
+
+</div>
+

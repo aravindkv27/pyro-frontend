@@ -1,0 +1,29 @@
+ 
+ <div class="login-wrapper">
+     <form [formGroup]="login" class="form" >
+       <h2>LOGIN</h2>
+    
+       <div>
+        <label for="" class="login__label">Email</label>
+        <input type="email" placeholder="Enter your email address" formControlName="email" required class="login__input">
+   </div>
+   <div>
+        <label for="" class="login__label">Password</label>
+   
+        <div class="login__box">
+             <input type="password" placeholder="Enter your password" formControlName="pass" required class="login__input" id="input-pass">
+             <i class="ri-eye-off-line login__eye" id="input-icon"></i>
+        </div>
+   </div>
+   <div>
+        
+   </div>
+          <div class="btns">
+               <button (click)="onlogin(login.value)" [disabled]="login.invalid" class="login-btn">Login</button>
+               <button (click)="goToSignup()" class="register-btn">SignUp</button>
+          </div>
+     </form>
+     
+   </div>
+   
+   
